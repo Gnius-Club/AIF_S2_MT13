@@ -1,24 +1,289 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 13 : La Llave y la Cerradura (Lógica Anidada)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 13 : La Llave y la Cerradura (Lógica Anidada)</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Introducir el concepto de Máquinas de Estados Finitos (FSM) para diseñar lógica compleja.</li>
+                                        <li>Implementar en Python estructuras condicionales anidadas (`if` dentro de otro `if`).</li>
+                                        <li>Crear puzzles funcionales con múltiples pasos secuenciales.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización de la lógica secuencial.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción a las FSM.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual sobre FSM y cómo guían el Vibe Coding.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Aplicación práctica del diseño de una FSM en papel, Vibe Coding guiado y pruebas.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación estructurada sobre la claridad de la lógica de los puzzles de 2 pasos.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un puzzle funcional de 2 pasos implementado en su escape room, programado con lógica anidada de Python, y validado con su FSM correspondiente.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a Delightex (con entorno Python activo) para cada equipo.</li>
+                                        <li>GDDs de la Misión 11.</li>
+                                        <li>Papel y lápiz o herramienta de dibujo digital para diseñar FSMs.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Xolo puede generar código con lógica anidada a partir de descripciones guiadas por FSM.</li>
+                                                <li>Tener una comprensión clara de una FSM simple (3 estados, 2 transiciones) para poder ejemplificar.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Prepararse para guiar a los estudiantes en la traducción de un concepto abstracto (FSM) a una descripción de 'vibe' y luego a una implementación de código.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional y contextualizar la misión como un avance a la programación de lógica compleja.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el concepto de puzzles como cadenas de acciones.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Diseñadores. Tienen un escenario y un plan de juego. Hoy, volvemos al código, pero a un nivel superior. Un buen puzzle rara vez es un solo paso. Es una cadena de acciones y reacciones. Hoy aprenderán a programar esa cadena. 'Si haces A, entonces puedes hacer B, y solo si haces B, puedes hacer C'. Bienvenidos a la lógica anidada."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo. Ya conocen el protocolo para iniciar su diálogo con Xolo para la Misión 13."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar las Máquinas de Estados Finitos (FSM) como una herramienta de diseño profesional.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce la necesidad de una herramienta visual para planificar lógica compleja.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Vamos a implementar la secuencia de puzzles que diseñaron en su GDD. Esto requiere una programación más sofisticada que un simple 'if'. Necesitaremos anidar condiciones, creando una jerarquía de reglas. Para visualizar esta lógica compleja, les presentaré un concepto fundamental en programación y diseño de IA: las Máquinas de Estados Finitos."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con seguridad: <strong>'Yo puedo diseñar un puzzle con una Máquina de Estados Finitos y programarlo usando lógica condicional anidada en Python.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que comprendan qué es una FSM y cómo se utiliza para guiar el Vibe Coding.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo de aprendizaje conceptual con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Para manejar lógica compleja, los programadores no la guardan en su cabeza: la dibujan. Para aprender esta técnica, consulten a su tutor conceptual. Díganle a Xolo: <strong>'Xolo, explícame qué es una Máquina de Estados Finitos (FSM) y cómo puedo usar un diagrama de FSM para guiar mi Vibe Coding.'</strong> Él les explicará el concepto de estados y transiciones y cómo este mapa visual hará que su comunicación con él sea mucho más precisa."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de diseñar una FSM en papel, usarla para el Vibe Coding, e implementar el código resultante.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño de la FSM ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos diseñan la FSM para su puzzle de 2 pasos en papel o en una herramienta digital.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Antes de pedir código, tomen papel y lápiz. Su primera tarea es dibujar la Máquina de Estados Finitos para su puzzle de 2 pasos. ¿Cuáles son los estados? (ej. 'Puerta Cerrada', 'Llave Encontrada'). ¿Cuáles son las transiciones exactas? (ej. 'clic en llave'). Este plan visual es su herramienta más importante hoy. No avancen sin él."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Vibe Coding Guiado por FSM e Implementación ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos usan su FSM para describir la lógica a Xolo, reciben el código y lo implementan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Con su FSM como guía, describan la 'vibe' de la lógica a Xolo. Sean precisos, usen los nombres de sus estados. Por ejemplo: 'Queremos programar la transición del Estado 2 al 3. La vibe es: Si el estado del juego es 'llave_encontrada' Y el jugador hace clic en la puerta...'. Xolo les dará el código con la condición anidada. Implementen los scripts y hagan pruebas exhaustivas, verificando que la secuencia es obligatoria."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar la demostración de los puzzles de 2 pasos y la retroalimentación sobre la claridad de la lógica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión sobre la utilidad del diagrama FSM.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Miren su puzzle funcionando y el diagrama FSM que dibujaron. ¿De qué manera les ayudó el diagrama a clarificar la lógica antes de programar? ¿Qué fue más difícil, diseñar el diagrama o implementar el código?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes demuestran su puzzle, incluyendo el intento de romper la secuencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Demuestren su puzzle de 2 pasos. Primero, muestren qué pasa si intentan saltarse el primer paso. Luego, muestren la secuencia correcta. Expliquen brevemente su diagrama FSM. El compañero prueba y prepara feedback sobre la claridad de la lógica."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback sobre el diseño de la FSM.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'La lógica de tu puzzle es muy clara porque el FSM está bien definido.' 2. 'Una pregunta que tengo sobre tus 'estados' es...' 3. 'Una idea para un cuarto estado sería...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, consolidando la importancia de pensar en 'estados'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han dado un salto conceptual gigante. Han aprendido a pensar en 'estados', la base de cómo la IA y los sistemas complejos gestionan el comportamiento. La lógica anidada es una de las herramientas más poderosas de un programador. En la próxima sesión, nos enfrentaremos al enemigo de todo desarrollador: los bugs. Prepárense para depurar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
